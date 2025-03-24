@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="330dp"
+
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/black_button"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtFName"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/space7"
+        app:layout_constraintEnd_toStartOf="@+id/space2"
+        app:layout_constraintStart_toEndOf="@+id/space3"
+        app:layout_constraintTop_toBottomOf="@+id/space4" />
+
+    <EditText
+        android:id="@+id/edtLName"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/space8"
+        app:layout_constraintEnd_toStartOf="@+id/space6"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/space5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698">
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="235dp"
+            android:layout_height="45dp"
+            android:background="@drawable/plaintext_grey_theme"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:paddingTop="1dp"
+            android:paddingRight="15dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_editCountryCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_editCountryCode"
+            app:layout_constraintVertical_bias="0.521" />
+
+        <ImageView
+            android:id="@+id/imageView_editCountryFlag"
+            android:layout_width="46dp"
+            android:layout_height="37dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545"
+            app:srcCompat="@drawable/palestine" />
+
+        <TextView
+            android:id="@+id/textView_editCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+970"
+            android:textColor="#4A4646"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_editCountryFlag"
+            app:layout_constraintEnd_toEndOf="@+id/edtPhone"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/imageView_editCountryFlag"
+            app:layout_constraintTop_toTopOf="@+id/imageView_editCountryFlag" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+
+
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+
+        android:textColor="#000000"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/space4"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCPass"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtFName"
+        app:layout_constraintTop_toBottomOf="@+id/space3" />
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/space2"
+        app:layout_constraintEnd_toEndOf="@+id/space7"
+        app:layout_constraintStart_toStartOf="@+id/space7"
+        app:layout_constraintTop_toBottomOf="@+id/space7" />
+
+    <Space
+        android:id="@+id/space6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/space8" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/plaintext_grey_theme"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <Space
+        android:id="@+id/space7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/space5"
+        app:layout_constraintEnd_toEndOf="@+id/space"
+        app:layout_constraintStart_toStartOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    <Space
+        android:id="@+id/space8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/space6"
+        app:layout_constraintEnd_toEndOf="@+id/space2"
+        app:layout_constraintStart_toStartOf="@+id/space2"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="796dp"
+        android:layout_marginStart="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtn_visibility"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="6dp"
+        android:background="#EEEEEE"
+        android:src="@drawable/ic_visible"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPass"
+        app:layout_constraintEnd_toEndOf="@+id/edtPass"
+        app:layout_constraintTop_toTopOf="@+id/edtPass"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_confirm_visibility"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="6dp"
+        android:background="#EEEEEE"
+        android:src="@drawable/ic_visible"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/edtCPass"
+        app:layout_constraintEnd_toEndOf="@+id/edtCPass"
+        app:layout_constraintTop_toTopOf="@+id/edtCPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
